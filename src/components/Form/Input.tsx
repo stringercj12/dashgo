@@ -15,7 +15,7 @@ interface InputProps extends ChakraInputProps {
 }
 
 const InputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
-  { name, label, error = null, ...rest },
+  { name, label, type = 'text', error = null, ...rest },
   ref
 ) => {
   return (
@@ -25,7 +25,6 @@ const InputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
       <ChakraInput
         name={name}
         id={name}
-        type="email"
         focusBorderColor="pink.500"
         bgColor="gray.900"
         variant="filled"
