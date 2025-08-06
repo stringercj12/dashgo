@@ -24,6 +24,7 @@ export default function Home() {
   const handleSignIn: SubmitHandler<SigInFormData> = async (values) => {
     await new Promise((resolve) => setTimeout(resolve, 2000));
 
+    window.location.href="/dashboard";
     console.log(values);
   };
 

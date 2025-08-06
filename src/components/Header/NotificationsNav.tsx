@@ -11,8 +11,8 @@ export function NotificationsNav() {
       borderRightWidth={1}
       borderColor="gray.700"
     >
-      <Icon as={RiNotificationLine} fontSize="20" />
-      <Icon as={RiUserAddLine} fontSize="20" />
+      <Icon as={RiNotificationLine} fontSize="20" _hover={{ color: 'pink.400', cursor: 'pointer' }} />
+      <Icon as={RiUserAddLine} fontSize="20" _hover={{ color: 'pink.400', cursor: 'pointer' }} />
     </HStack>
   );
 }
